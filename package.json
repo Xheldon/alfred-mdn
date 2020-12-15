@@ -1,6 +1,6 @@
 {
   "name": "alfred-mdn-cn",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Search through the MDN documentation in chinese",
   "main": "index.js",
   "repository": "xheldon/alfred-mdn",
