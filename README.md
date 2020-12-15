@@ -13,7 +13,7 @@ Note: some api not show in result,like: Math.acosh: https://developer.mozilla.or
 ## Install
 
 ```
-$ npm install -g alfred-mdn
+$ npm install -g alfred-mdn-cn
 ```
 
 *Requires [Node.js](https://nodejs.org) 4+ and the Alfred [Powerpack](https://www.alfredapp.com/powerpack/).*
