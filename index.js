@@ -1,13 +1,14 @@
 "use strict";
 
 const alfy = require("alfy");
-const mdnBase = "https://wiki.developer.mozilla.org/api/v1/search/zh-CN";
+const mdnApiBase = 'https://wiki.developer.mozilla.org/api/v1/search/zh-CN';
+const mdnDocsBase = 'https://developer.mozilla.org/zh-CN/docs/';
 
-alfy.fetch(`${mdnBase}?q=${alfy.input}`, { transform })
-    .then(results => {
+alfy.fetch(`${mdnApiBase}?q=${alfy.input}`, { transform: ({ documents }) => documents }).then(results => {
         const items = (results || []).map(result => {
-            const {title, excerpt, url} = result;
+            const {title, excerpt, slug} = result;
             const subtitle = stripHtml(excerpt);
+            const url = `${mdnDocsBase}${slug}`;
 
             return {
                 title,
@@ -20,10 +21,10 @@ alfy.fetch(`${mdnBase}?q=${alfy.input}`, { transform })
 
         // No results
         if (items.length === 0 && false) {
-            const url = `${mdnBase}?q=${alfy.input}`;
+            const url = `${mdnApiBase}?q=${alfy.input}`;
 
             items.push({
-                title: `Show all results for '${alfy.input}'`,
+                title: `显示 '${alfy.input}' 的所有结果...`,
                 arg: url,
                 quicklookurl: url
             });
@@ -31,10 +32,6 @@ alfy.fetch(`${mdnBase}?q=${alfy.input}`, { transform })
 
         alfy.output(items);
     });
-
-function transform(body) {
-    return body.documents;
-}
 
 function stripHtml(text) {
     return text.replace(/<[^>]+>/g, '');
