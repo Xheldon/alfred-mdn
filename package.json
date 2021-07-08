@@ -1,41 +1,29 @@
 {
   "name": "alfred-mdn-cn",
-  "version": "1.0.4",
-  "description": "Search through the MDN documentation in chinese",
+  "version": "1.0.0",
+  "description": "search mdn docs with chinese",
   "main": "index.js",
-  "repository": "xheldon/alfred-mdn",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xheldon/alfred-mdn-cn.git"
+  },
   "keywords": [
-    "alfred",
-    "workflow",
+    "xheldon",
     "mdn",
-    "mozilla",
-    "developers",
-    "network",
-    "html",
-    "javascript",
-    "js",
-    "cn"
+    "chinese"
   ],
-  "author": {
-    "name": "Klaas Cuvelier",
-    "email": "cuvelierklaas@gmail.com",
-    "url": "klaascuvelier.io"
-  },
+  "author": "Xheldon",
   "license": "MIT",
-  "dependencies": {
-    "alfy": "0.9.1"
+  "bugs": {
+    "url": "https://github.com/Xheldon/alfred-mdn-cn/issues"
   },
-  "files": [
-    "index.js",
-    "icon.png",
-    "info.plist"
-  ],
-  "engines": {
-    "node": ">=8"
+  "homepage": "https://github.com/Xheldon/alfred-mdn-cn#readme",
+  "dependencies": {
+    "alfy": "^0.11.1",
+    "tunnel": "0.0.6"
   }
 }

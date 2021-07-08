@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.klaascuvelier.mdn</string>
+	<string>com.xheldon.mdn-cn</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>EF438A95-64D5-4C23-B8D7-7DAC01EFF3E4</key>
+		<key>E27F8D61-05A9-4E5E-8FF2-AD0C9EDC8F61</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>926103C4-9F2F-4642-B6C3-325BF5A4B36D</string>
+				<string>4C1F7C23-E064-4608-893B-B9B9B4FD7765</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -23,13 +23,13 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>Klaas Cuvelier</string>
+	<string>Xheldon</string>
 	<key>description</key>
-	<string>Search through the MDN documentation</string>
+	<string>MDN 中文搜索</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>mdn</string>
+	<string>MDN Chinese</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -47,7 +47,7 @@
 			<key>type</key>
 			<string>alfred.workflow.action.openurl</string>
 			<key>uid</key>
-			<string>926103C4-9F2F-4642-B6C3-325BF5A4B36D</string>
+			<string>4C1F7C23-E064-4608-893B-B9B9B4FD7765</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -56,6 +56,12 @@
 			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>1</integer>
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
@@ -63,15 +69,15 @@
 				<key>keyword</key>
 				<string>mdn</string>
 				<key>queuedelaycustom</key>
-				<integer>3</integer>
+				<integer>5</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string>Searching...</string>
+				<string>努力搜索中...</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -81,7 +87,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Search through the MDN documentation</string>
+				<string>搜索 MDN 中文文档</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -90,31 +96,31 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>EF438A95-64D5-4C23-B8D7-7DAC01EFF3E4</string>
+			<string>E27F8D61-05A9-4E5E-8FF2-AD0C9EDC8F61</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
-		<key>926103C4-9F2F-4642-B6C3-325BF5A4B36D</key>
+		<key>4C1F7C23-E064-4608-893B-B9B9B4FD7765</key>
 		<dict>
 			<key>xpos</key>
-			<integer>280</integer>
+			<integer>385</integer>
 			<key>ypos</key>
-			<integer>90</integer>
+			<integer>95</integer>
 		</dict>
-		<key>EF438A95-64D5-4C23-B8D7-7DAC01EFF3E4</key>
+		<key>E27F8D61-05A9-4E5E-8FF2-AD0C9EDC8F61</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>215</integer>
 			<key>ypos</key>
-			<integer>90</integer>
+			<integer>95</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>klaascuvelier.io</string>
+	<string>https://xheldon.com</string>
 </dict>
 </plist>
